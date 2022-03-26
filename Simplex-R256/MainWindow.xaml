@@ -1,0 +1,26 @@
+﻿<Window x:Class="SimplexNamespace.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Simplex R-256 Emulator" Height="700" Width="600" Loaded="Window_Loaded">
+
+    <Grid Background="#FFFFFFFF">
+
+
+        <Canvas Height="296" HorizontalAlignment="Left" Margin="78,50,0,0" Name="canvas" VerticalAlignment="Top" Width="424" ClipToBounds="True" Grid.ColumnSpan="2" >
+            <Canvas.Background>
+                <ImageBrush ImageSource="face.png" Stretch="Fill"/>
+            </Canvas.Background>
+        </Canvas>
+        <Button Content="F1" Height="37" HorizontalAlignment="Left" Margin="140,375,0,0" Name="f1" VerticalAlignment="Top" Width="101" Click="F1_Click" />
+        <Button Content="F2" Height="37" HorizontalAlignment="Left" Margin="140,449,0,0" Name="f2" VerticalAlignment="Top" Width="101" Click="F2_Click" />
+        <Button Content="F3" Height="37" HorizontalAlignment="Left" Margin="140,521,0,0" Name="f3" VerticalAlignment="Top" Width="101" Click="F3_Click" />
+        <Button Content="F4" Height="37" HorizontalAlignment="Left" Margin="140,590,0,0" Name="f4" VerticalAlignment="Top" Width="101" Click="F4_Click" />
+
+        <Button Content="Memory Dump" Height="37" HorizontalAlignment="Left" Margin="355,521,0,0" Name="mem" VerticalAlignment="Top" Width="101" Click="memoryDump" />
+
+        <Button Content="Clear Screen" Height="37" HorizontalAlignment="Left" Margin="355,449,0,0" Name="clear" VerticalAlignment="Top" Width="101" Click="clear_click" />
+
+        <Button Content="Load &amp; Run " Height="36" HorizontalAlignment="Left" Margin="355,375,0,0" Name="load" VerticalAlignment="Top" Width="101" Click="loadButton_Click" />
+
+    </Grid>
+</Window>
